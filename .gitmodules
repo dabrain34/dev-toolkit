@@ -1,4 +1,4 @@
 [submodule "gstreamer-toolkit"]
 	path = gstreamer-toolkit
-	url = git@bitbucket.org:dabrain34/gstreamer-toolkit.git
+	url = git@github.com:dabrain34/gstreamer-toolkit.git
 	branch = master

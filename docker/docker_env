@@ -1,0 +1,5 @@
+#/bin/bash
+
+DOCKER_CMD=`which docker`
+
+HOSTNAME="$HOST_NAME:$HOST_PORT"

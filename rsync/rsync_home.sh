@@ -2,7 +2,7 @@
 
 usage () {
 
-	echo " Usage: ./runme.sh -c <command> -s <source> -d <destination> -e <exclude_file>"
+	echo " Usage: $0 -c <command> -s <source> -d <destination> -e <exclude_file>"
 	echo "     -c or --command      : backup or restore"
 	echo "     -s or --source         : change source folder"
 	echo "     -d or --dest        : vchange dest folder"

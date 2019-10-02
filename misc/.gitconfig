@@ -1,0 +1,42 @@
+[core]
+        editor = vim
+        autocrlf = input
+        excludesfile = /home/scerveau/.gitignore_global
+[user]
+        name = Stéphane Cerveau
+        email = scerveau@gmail.com
+
+[alias]
+        ad = add -v
+        ci = commit -a
+        ba = branch -a
+        co = checkout
+        cp = cherry-pick
+        st = status
+        lf = log --name-only
+        ls = log --pretty=oneline --abbrev-commit
+        up = pull --rebase
+        dc = diff --cached
+        ss = stash save
+        sp = stash pop
+        rc = rebase --continue
+[apply]
+        whitespace = strip
+
+[diff]
+        color = auto
+        rename = copy
+
+[pager]
+        color = true
+
+[status]
+        color = auto
+[color]
+        ui = auto
+[push]
+        default = tracking
+[rebase]
+        stat = true
+[cola]
+	spellcheck = false

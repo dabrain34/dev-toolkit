@@ -37,7 +37,7 @@ while true; do
 			shift; shift;
 			;;
 		-d | --dest)
-			SRC=$2
+			DEST=$2
 			shift; shift;
 			;;
         -e | --exclude-file)

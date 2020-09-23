@@ -31,7 +31,7 @@ int main(void) {
       }
       switch (e.type) {
         case MotionNotify:
-          fprintf(stdout, "Button pressed %d %d\n", e.xmotion.x, e.xmotion.y);
+          fprintf(stdout, "Motion notify %d %d\n", e.xmotion.x, e.xmotion.y);
           break;
         case ButtonPress:
           fprintf(stdout, "Button pressed\n");

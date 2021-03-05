@@ -60,7 +60,7 @@ while true; do
 	esac
 done
 
-BACKUP_OPTS="-aP"
+BACKUP_OPTS="-avP"
 RESTORE_OPTS="-rltgoDv"
 
 echo "CMD=$CMD"
@@ -70,7 +70,7 @@ echo "DEST=$DEST"
 if [ "x$CMD" = "xbackup" ]; then
 RSYNC_CMD="rsync $BACKUP_OPTS --exclude-from=$EXCLUDE_FILE $SRC $DEST"
 elif [ "x$CMD" = "xrestore" ] ; then
-RSYNC_CMD="rsync $RESTORE_OPTS $DEST $SRC"
+RSYNC_CMD="rsync $RESTORE_OPTS $SRC $DEST"
 else
 echo "RSYNC_CMD: $RSYNC_CMD not found. Exit."
 fi
